@@ -1,0 +1,24 @@
+apagar = 0
+
+while True:
+    codigo = int(input("Entre com o codigo do produto   :    ( Digite 0 para sair )"))
+    preço = 0
+    if codigo == 0:
+        print("Volte Sempre !!! ")
+        break;
+    elif codigo == 10:
+        preço = 5.00
+    elif codigo == 20:
+        preço = 10.00
+    elif codigo == 33:
+        preço = 50.00
+    elif codigo == 45:
+        preço = 77.00
+    elif codigo == 88:
+        preço = 55.00
+    else:
+        print("Codigo Invalido !!!!")
+    if preço != 0:
+        quantidade = int(input("Digite a quantidade :   "))
+        apagar = apagar  + ( preço *quantidade)
+    print('Total a pagar é R$' ,apagar)
